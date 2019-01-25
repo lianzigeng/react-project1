@@ -6,6 +6,7 @@ import {fromJS} from "immutable";
 ////reducer分类:  1.0把需要该组件内的数据 另写为一个reducer文件
 const defaultState = fromJS({
     focused: false,
+    mouseIn:false,
     list: [],
     page:1,
     totalPage:1,
@@ -42,7 +43,17 @@ export default (state = defaultState, action) => {
         case constants.SEARCH_BLUR:
             return state.set('focused', false);
         case constants.CHANG_LIST:
-            return state.set('list', action.data);
+            //这个 性能更好
+            return state.merge({
+                list:action.data,
+                totalPage:action.totalPage,
+            });
+        case constants.MOUSE_ENTER:
+            return state.set('mouseIn',true);
+        case constants.MOUSE_LEAVE:
+            return state.set('mouseIn',false);
+            case constants.CHANGE_PAGE:
+            return state.set('page',action.page);
         default:
             return state;
     }

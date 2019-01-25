@@ -1,8 +1,3 @@
-
-import {createGlobalStyle} from "styled-components";
-
-export const IconFont = createGlobalStyle`
-
 @font-face {font-family: "iconfont";
   src: url('./iconfont.eot?t=1548407130900'); /* IE9 */
   src: url('./iconfont.eot?t=1548407130900#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -20,6 +15,5 @@ export const IconFont = createGlobalStyle`
   -moz-osx-font-smoothing: grayscale;
 }
 
-`;
 
 
