@@ -1,24 +1,10 @@
-// redux 使用步骤 : 1.3.2 在数据中存储一个数据
+//相当于为 reducer 起了一个别名headerReducer
+import { reducer as headerReducer} from "../common/header/store";
+import {combineReducers} from "redux-immutable";
 
-const defaultState = {
+//reducer分类: 1.0 把数据分别管理,然后整合进这一个数据中
+const  reducer = combineReducers({
+    header: headerReducer,
+});
 
-    focused: false,
-};
-
-
-// redux 使用步骤 : 1.1创建数据  给与state 默认值
-export default (state = defaultState, action) => {
-
-    if (action.type === "search_focus") {
-        const newState = JSON.parse(JSON.stringify(defaultState));
-        newState.focused = true;
-        return newState;
-    }
-    if (action.type === "search_blur") {
-        const newState = JSON.parse(JSON.stringify(defaultState));
-        newState.focused = false;
-        return newState;
-    }
-
-    return state;
-};
+export default reducer;
