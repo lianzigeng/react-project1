@@ -107,14 +107,14 @@ class Header extends Component {
                         <SearchInfoTitle>
                             热门搜索
                             <SearchInfoSwitch
-                                onClick={() => handleChangePage(page, totalPage,this.spinIcon)}
+                                onClick={() => handleChangePage(page, totalPage, this.spinIcon)}
 
                             >
                                 {/*
                                 ref 获取真正的渲染的节点
                                 */}
-                                <i ref={(icon) =>{
-                                    this.spinIcon =icon;
+                                <i ref={(icon) => {
+                                    this.spinIcon = icon;
                                 }} className={"iconfont spin"}>&#xe851;</i>
                                 换一批
                             </SearchInfoSwitch>
@@ -134,7 +134,7 @@ class Header extends Component {
     }
 
     render() {
-        const {focused, handleInputFocus, handleInputBlur} = this.props;
+        const {focused, handleInputFocus, handleInputBlur, list} = this.props;
         return (
             <HeaderWrapper>
                 <Logo/>
@@ -155,7 +155,7 @@ class Header extends Component {
                         >
                             <NavSearch
                                 className={focused ? 'focused' : ""}
-                                onFocus={handleInputFocus}
+                                onFocus={() => handleInputFocus(list)}
                                 onBlur={handleInputBlur}
                             />
                         </CSSTransition>
@@ -197,8 +197,11 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 
     return {
-        handleInputFocus() {
-            dispatch(actionCreator.getList());
+        handleInputFocus(list) {
+            console.log(list);
+            if (list.size === 0) {
+                dispatch(actionCreator.getList());
+            }
             const action = actionCreator.searchFocus();
             dispatch(action);
         },
@@ -213,15 +216,15 @@ const mapDispatchToProps = (dispatch) => {
         handleMouseLeave() {
             dispatch(actionCreator.mouseLeave());
         },
-        handleChangePage(page, totalPage,spin) {
+        handleChangePage(page, totalPage, spin) {
 
-            let originAngle =spin.style.transform.replace(/[^0-9]/ig,'');
+            let originAngle = spin.style.transform.replace(/[^0-9]/ig, '');
             if (originAngle) {
-                originAngle =parseInt(originAngle,10);
-            }else {
-                originAngle =0;
+                originAngle = parseInt(originAngle, 10);
+            } else {
+                originAngle = 0;
             }
-            spin.style.transform =`rotate(${originAngle+360}deg)`;
+            spin.style.transform = `rotate(${originAngle + 360}deg)`;
 
             let showPage;
             if (page < totalPage) {

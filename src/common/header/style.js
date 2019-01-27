@@ -130,7 +130,7 @@ export const SearchInfoSwitch = styled.span`
         margin-right:2px;
         transition:all .2s ease-in;
         transform:rotate(0deg);
-        transform-origin:center;
+        transform-origin:center center;
     }
 `;
 export const SearchInfoList = styled.div`
