@@ -6,6 +6,7 @@ import List from './component/List';
 import Recommend from './component/Recommend';
 import Writer from './component/Writer';
 
+
 class Home extends Component {
 
     render() {
