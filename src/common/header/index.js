@@ -10,6 +10,7 @@ import {
 import {connect} from 'react-redux';
 
 import {actionCreator} from './store';
+import {Link} from "react-router-dom";
 
 // redux 使用步骤 : 1.3 让组件与 store 建立联系
 
@@ -137,7 +138,9 @@ class Header extends Component {
         const {focused, handleInputFocus, handleInputBlur, list} = this.props;
         return (
             <HeaderWrapper>
-                <Logo/>
+                <Link to={'/'}>
+                    <Logo />
+                </Link>
                 <Nav>
                     <NavItem className={'left active'}>首页</NavItem>
                     <NavItem className={'left'}>下载</NavItem>

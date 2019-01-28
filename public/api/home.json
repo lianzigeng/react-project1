@@ -1,0 +1,83 @@
+{
+  "success": true,
+  "data": {
+    "topicList": [
+      {
+        "id": 1,
+        "title": "手绘",
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png"
+      },
+      {
+        "id": 2,
+        "title": "社会热点",
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png"
+      },
+      {
+        "id": 3,
+        "title": "手绘",
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png"
+      },
+      {
+        "id": 4,
+        "title": "手绘",
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png"
+      },
+      {
+        "id": 5,
+        "title": "手绘",
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png"
+      },
+      {
+        "id": 6,
+        "title": "手绘",
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png"
+      }
+    ],
+    "articleList": [
+      {
+        "id": 20,
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png",
+        "title": "哇，9个方面3个月改变形象，白美其实很简单!",
+        "desc": "1.牙齿 2.天鹅颈/臂 3.护肤 4.减重减脂 5.瘦腿塑性 6.颈纹 7.眼睛 8.美白 1.牙齿 牙齿白真的很加分。 （1）日常清理就是使..."
+      },
+      {
+        "id": 21,
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png",
+        "title": "哇，9个方面3个月改变形象，白美其实很简单!",
+        "desc": "1.牙齿 2.天鹅颈/臂 3.护肤 4.减重减脂 5.瘦腿塑性 6.颈纹 7.眼睛 8.美白 1.牙齿 牙齿白真的很加分。 （1）日常清理就是使..."
+      },
+      {
+        "id": 22,
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png",
+        "title": "哇，9个方面3个月改变形象，白美其实很简单!",
+        "desc": "1.牙齿 2.天鹅颈/臂 3.护肤 4.减重减脂 5.瘦腿塑性 6.颈纹 7.眼睛 8.美白 1.牙齿 牙齿白真的很加分。 （1）日常清理就是使..."
+      },
+      {
+        "id": 23,
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png",
+        "title": "哇，9个方面3个月改变形象，白美其实很简单!",
+        "desc": "1.牙齿 2.天鹅颈/臂 3.护肤 4.减重减脂 5.瘦腿塑性 6.颈纹 7.眼睛 8.美白 1.牙齿 牙齿白真的很加分。 （1）日常清理就是使..."
+      },
+      {
+        "id": 24,
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png",
+        "title": "哇，9个方面3个月改变形象，白美其实很简单!",
+        "desc": "1.牙齿 2.天鹅颈/臂 3.护肤 4.减重减脂 5.瘦腿塑性 6.颈纹 7.眼睛 8.美白 1.牙齿 牙齿白真的很加分。 （1）日常清理就是使..."
+      }
+    ],
+    "recommendList": [
+      {
+        "id": 50,
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-3-7123fd94750759acf7eca05b871e9d17.png"
+      },
+      {
+        "id": 51,
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-3-7123fd94750759acf7eca05b871e9d17.png"
+      },
+      {
+        "id": 52,
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-3-7123fd94750759acf7eca05b871e9d17.png"
+      }
+    ]
+  }
+}

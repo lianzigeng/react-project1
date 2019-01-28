@@ -22,16 +22,16 @@ class App extends Component {
                     {/*务必这样使用全局样式,放在最上面,*/}
                     <InjectGlobal/>
                     <IconFont/>
-                    <Header/>
                     {/*路由的使用,*/}
                     <BrowserRouter>
                         <div>
+                            <Header/>
                             {/*render 就是绘制的视图 path 就是路径 exact 路径完全相同时才显示*/}
                             {/*<Route path={'/'} exact  render={() => (*/}
-                                {/*<div>home</div>*/}
+                            {/*<div>home</div>*/}
                             {/*)}></Route>*/}
                             {/*<Route path={'/detail'} exact render={() => (*/}
-                                {/*<div>detail</div>*/}
+                            {/*<div>detail</div>*/}
                             {/*)}></Route>*/}
 
                             <Route path={"/"} exact component={Home}/>
