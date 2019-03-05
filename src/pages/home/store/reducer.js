@@ -1,5 +1,4 @@
 import {fromJS} from "immutable";
-import logoPic from '../../../statics/logo.png';
 
 // redux 使用步骤 : 1.3.2 在数据中存储一个数据
 
